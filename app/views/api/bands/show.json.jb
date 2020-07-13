@@ -1,0 +1,9 @@
+{
+id: @band.id,
+name: @band.id,
+lead_singer: @band.lead_singer,
+guitarist: @band.guitarist,
+bassist: @band.bassist,
+drummer: @band.drummer,
+gig_rate: @band.gig_rate
+}
