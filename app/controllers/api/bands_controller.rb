@@ -34,7 +34,12 @@ class Api::BandsController < ApplicationController
       )
       render 'show.json.jb'
   end
-
+  
+  def destroy
+    @band = Band.find_by(id: params[:id])
+    @band.destroy
+    render json: {message: "You have successfully deleted the band."}
+  end
 
 
   

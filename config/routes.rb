@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     get "bands/:id" => "bands#show"
     post "bands" => "bands#create"
     patch "bands/:id" => "bands#update"
+    delete "bands/:id" => "bands#destroy"
   end
 end
