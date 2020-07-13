@@ -1,6 +1,6 @@
 {
 id: @band.id,
-name: @band.id,
+name: @band.name,
 lead_singer: @band.lead_singer,
 guitarist: @band.guitarist,
 bassist: @band.bassist,
