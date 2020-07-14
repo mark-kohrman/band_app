@@ -12,6 +12,7 @@ class Api::BandsController < ApplicationController
   def create
     @band = Band.create(
     name: params[:name],
+    hit_song: params[:hit_song],
     lead_singer: params[:lead_singer],
     guitarist: params[:guitarist],
     bassist: params[:bassist],
@@ -26,6 +27,7 @@ class Api::BandsController < ApplicationController
     @band = Band.find_by(id: params[:id])
     @band.update(
       name: params[:name] || @band.name,
+      hit_song: params[:hit_song] || @band.hit_song,
       lead_singer: params[:lead_singer] || @band.lead_singer,
       guitarist: params[:guitarist] || @band.guitarist,
       bassist: params[:bassist] || @band.bassist,
